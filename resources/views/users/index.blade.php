@@ -3,7 +3,7 @@
 @section('content')
     <div class="w-screen h-screen flex flex-col justify-start items-start p-7">
         <div class="w-full flex justify-between mb-5 items-center h-20">
-            <h1 class="text-4xl font-bold uppercase text-green-500">users page</h1>
+            <h1 class="text-3xl font-bold uppercase text-green-500">users page</h1>
             @if (session('success'))
                 <div
                     class="flex items-center justify-between p-4 text-green-800 bg-green-100 border border-green-300 rounded-lg flash-message">
