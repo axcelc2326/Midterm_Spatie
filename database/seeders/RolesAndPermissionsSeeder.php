@@ -37,13 +37,20 @@ class RolesAndPermissionsSeeder extends Seeder
         ]);
 
         $user2 = User::firstOrCreate([
-            'email' => 'axcel@gmail.com',
+            'email' => 'data@gmail.com',
             'name' => 'Data Entry User',
+            'password' => bcrypt('data123')
+        ]);
+
+        $user3 = User::firstOrCreate([
+            'email' => 'axcel@gmail.com',
+            'name' => 'User',
             'password' => bcrypt('axcel123')
         ]);
 
         // Assign roles to users
         $user1->assignRole('admin');
         $user2->assignRole('data-entry');
+        $user3->assignRole('');
     }
 }
