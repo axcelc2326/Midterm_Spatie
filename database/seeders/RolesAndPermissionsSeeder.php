@@ -30,19 +30,19 @@ class RolesAndPermissionsSeeder extends Seeder
         $admin->syncPermissions($permissions);
 
         // Create users
-        $user1 = User::firstOrCreate([
+        $user1 = User::create([
             'email' => 'admin@gmail.com',
             'name' => 'Admin User',
             'password' => bcrypt('admin123')
         ]);
 
-        $user2 = User::firstOrCreate([
+        $user2 = User::create([
             'email' => 'data@gmail.com',
             'name' => 'Data Entry User',
             'password' => bcrypt('data123')
         ]);
 
-        $user3 = User::firstOrCreate([
+        $user3 = User::create([
             'email' => 'axcel@gmail.com',
             'name' => 'User',
             'password' => bcrypt('axcel123')
